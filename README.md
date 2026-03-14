@@ -1,105 +1,63 @@
-# 🍽️ FoodBridge – Project Setup Guide
+ Food Bridge - MERN Stack Surplus Food Distribution Platform
+Food Bridge is a full-stack web application designed to combat food insecurity and waste in Pakistan. It provides a seamless interface for restaurants and households to donate surplus food to NGOs and individuals in need.
 
-Welcome to the **FoodBridge** project! Follow the steps below to set up and run the application on your local machine.
+🔗 Live Demo Link
 
----
+The Mission:
+In Pakistan, millions of tons of food are wasted annually while a significant portion of the population faces food insecurity. This project bridges that gap using modern web technology to create a localized, efficient donation ecosystem.
 
-## 🧩 Prerequisites
+🛠 Tech Stack & Architecture
+Frontend: React.js (Hooks, Context API, Tailwind CSS)
 
-Ensure the following tools are installed on your system:
+Backend: Node.js & Express.js
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) (v14 or higher recommended)
-- [XAMPP](https://www.apachefriends.org/index.html)
+Database: MongoDB (Mongoose)
 
----
+Authentication: JWT (JSON Web Tokens) with Secure Cookie storage
 
-## 🚀 Getting Started
+Deployment: Render (Backend/Frontend), MongoDB Atlas (Cloud Database)
 
-### 1. Clone the Repository
+Key Features:
+Secure User Roles: Distinct dashboards for Donors (Restaurants/Individuals),Volunteers and Recipients (NGOs/Volunteers).
 
-Open your terminal and run:
+Real-time Listings: Donors can post food items with expiry times, quantity, and pickup locations.
 
----
+Interactive Food Feed: Recipients can browse available food based on their current location.
 
-### 2. Move Project to XAMPP Directory
+Volunteer Empowerment: A dedicated portal for welfare contributors to join the mission.
 
-After cloning, move the project folder to your XAMPP `htdocs` directory:
+Request Management: Track the status of food claims from "Pending" to "Picked Up."
 
-```bash
-# For Windows
-C:\xampp\htdocs\foodbridge-mirpur
+Responsive UI: Fully optimized for mobile and desktop, ensuring accessibility for all users.
 
-# For macOS/Linux
-/Applications/XAMPP/htdocs/foodbridge-mirpur
-```
+🛠 Installation & Local Setup
+To run this project locally, follow these steps:
 
----
+Clone the repository:
+Bash
+git clone https://github.com/your-username/food-bridge.git
 
-### 3. Start XAMPP Services
+Install dependencies:
 
-- Launch the **XAMPP Control Panel**
-- Start the following services:
-  - ✅ Apache
-  - ✅ MySQL
-
----
-
-### 4. Import the Database (if applicable)
-
-1. Open your browser and go to: [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
-2. Click on **"New"**, create a database (e.g., `foodbridge`)
-3. Import the `.sql` file (if provided) using the **Import** tab or manually create the DB.
-
----
-
-### 5. Set Up the Frontend
-
-Navigate to the frontend directory and install dependencies:
-
-```bash
-cd foodbridge-mirpur/foodbridge-Frontend
+# For Backend
 npm install
+# For Frontend
+cd client && npm install
+
+Environment Variables:
+Create a .env file in the root directory and add:
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+PORT=5000
+
+Run the app:
 npm run dev
-```
 
-> The frontend will now be running on: [http://localhost:5173](http://localhost:5173)  
-> (or another port if Vite/React assigns one)
 
----
-
-### 6. Access the Backend
-
-If your backend is PHP-based and inside `foodbridge-Backend`, it should now be accessible at:
-
-```
-http://localhost/foodbridge/foodbridge-Backend
-```
-
-Ensure any backend files like `db.php` are configured correctly with:
-
-```php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "foodbridge";
-```
-
----
-
-## ✅ You're All Set!
-
-You now have both the frontend and backend running locally. You're ready to develop, test, and contribute to the FoodBridge project!
-
----
-
-## 💡 Tips
-
-- Use `npm run dev` every time you start frontend development.
-- Make sure Apache and MySQL are running before accessing the project.
-- Avoid pushing directly to `main`; use feature branches for collaboration.
-
----
+🎯 Future Enhancements
+[ ] Google Maps API integration for precise location tracking.
+[ ] Push notifications for NGOs when food is donated nearby.
+[ ] Rating system for donors to ensure food quality.
 
 ## 📬 Contact
 
