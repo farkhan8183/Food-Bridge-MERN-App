@@ -12,7 +12,7 @@ import DonorRegistration from "./pages/donor/DonorRegistration";
 import DonorLogin from "./pages/donor/DonorLogin";
 import RecipientLogin from "./pages/Recepient/RecipientLogin";
 import RecipientRegistration from "./pages/Recepient/RecipientRegistration";
-import RecipientPanel from "./pages/Recepient/recipientpanel";
+import RecipientPanel from "./pages/Recepient/Recipientpanel";
 import { userDataContext } from "./context/userContext";
 import { useContext } from "react";
 import { useLocation } from "react-router-dom";
