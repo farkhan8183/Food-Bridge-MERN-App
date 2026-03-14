@@ -30,8 +30,8 @@ export const registration = async (req,res) => {
     let token = await genToken(user._id) //sends id of a new user to gentoken fucntion in config folder where our token ll be genereated
     res.cookie("token",token,{  //after token is gesnreatred,we ll simple parse/store it in cookie
         httpOnly:true,
-        secure:false,
-        sameSite: "Strict",
+      secure: true,   // MUST be true for Render/HTTPS
+      sameSite: "None", // MUST be "None" for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000 //expires in 7 days
     })
     return res.status(201).json(user)
@@ -58,8 +58,8 @@ export const login = async (req,res) => {
         let token = await genToken(user._id)
         res.cookie("token",token,{
         httpOnly:true,
-        secure:false,
-        sameSite: "Strict",
+       secure: true,   // MUST be true for Render/HTTPS
+  sameSite: "None" ,// MUST be "None" for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000
     })
     return res.status(201).json(user)
@@ -110,8 +110,8 @@ export const volunteerRegistration = async (req,res) => {
     let token = await genToken2(user._id) //sends id of a new user to gentoken fucntion in config folder where our token ll be genereated
     res.cookie("token",token,{  //after token is genreatred,we ll simple parse/store it in cookie
         httpOnly:true,
-        secure:false,
-        sameSite: "Strict",
+        secure: true,   // MUST be true for Render/HTTPS
+  sameSite: "None",// MUST be "None" for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000 //expires in 7 days
     })
     return res.status(201).json(user)
@@ -139,8 +139,8 @@ export const volunteerlogin = async (req,res) => {
         let token = await genToken2(user._id)
         res.cookie("token",token,{
         httpOnly:true,
-        secure:false,
-        sameSite: "Strict",
+     secure: true,   // MUST be true for Render/HTTPS
+  sameSite: "None", // MUST be "None" for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000
     })
     return res.status(201).json(user)
@@ -192,8 +192,8 @@ export const recipientRegistration = async (req,res) => {
     let token = await genToken3(user._id) //sends id of a new user to gentoken fucntion in config folder where our token ll be genereated
     res.cookie("token",token,{  //after token is genreatred,we ll simple parse/store it in cookie
         httpOnly:true,
-        secure:false,
-        sameSite: "Strict",
+       secure: true,   // MUST be true for Render/HTTPS
+  sameSite: "None", // MUST be "None" for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000 //expires in 7 days
     })
     return res.status(201).json(user)
@@ -220,8 +220,8 @@ export const recipientlogin = async (req,res) => {
         let token = await genToken3(user._id)
         res.cookie("token",token,{
         httpOnly:true,
-        secure:false,
-        sameSite: "Strict",
+       secure: true,   // MUST be true for Render/HTTPS
+  sameSite: "None", // MUST be "None" for cross-domain
         maxAge: 7 * 24 * 60 * 60 * 1000
     })
     return res.status(201).json(user)
