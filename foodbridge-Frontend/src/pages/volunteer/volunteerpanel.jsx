@@ -6,11 +6,11 @@ import axios from 'axios';
 import { useContext } from 'react';
 import { authDataContext } from '../../context/AuthContext';
 import { toast } from 'react-toastify';
-import { userDataContext } from '../../context/userContext';
+
 
 function VolunteerPanel() {
 
-  let{userData}=useContext(userDataContext);
+ 
   const [user, setUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isVolunteer, setIsVolunteer] = useState(false);
