@@ -5,7 +5,7 @@ import Mission from "./pages/Mission";
 import Contact from "./pages/Contact";
 import Login from "./pages/donor/DonorLogin";
 import DonorPanel from "./pages/donor/donorpanel"; // Add this import
-import VolunteerPanel from "./pages/volunteer/Volunteerpanel";
+import VolunteerPanel from "./pages/volunteer/volunteerpanel";
 import VolunteerRegistration from "./pages/volunteer/VolunteerRegistration";
 import VolunteerLogin from "./pages/volunteer/Volnteerlogin";
 import DonorRegistration from "./pages/donor/DonorRegistration";
