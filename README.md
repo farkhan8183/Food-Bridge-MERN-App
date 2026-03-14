@@ -1,7 +1,7 @@
  Food Bridge - MERN Stack Surplus Food Distribution Platform
 Food Bridge is a full-stack web application designed to combat food insecurity and waste in Pakistan. It provides a seamless interface for restaurants and households to donate surplus food to NGOs and individuals in need.
 
-🔗 Live Demo Link
+## 🔗 [Live Demo: Food Bridge App](https://food-bridge-mern-app-1.onrender.com/)
 
 The Mission:
 In Pakistan, millions of tons of food are wasted annually while a significant portion of the population faces food insecurity. This project bridges that gap using modern web technology to create a localized, efficient donation ecosystem.
