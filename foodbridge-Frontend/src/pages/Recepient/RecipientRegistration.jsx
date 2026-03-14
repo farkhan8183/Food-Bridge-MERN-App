@@ -13,7 +13,7 @@ import axios from 'axios'
 //import { userDataContext } from '../context/UserContext';
 import { toast } from 'react-toastify';
 import Loading from '../../components/Loading';//a seperate component is made for loading(simple styling)
-import RecipientPanel from './recipientpanel';
+import RecipientPanel from './RecipientPanel';
 import Recipientlogin from './RecipientLogin';
 
 function Registration() {
