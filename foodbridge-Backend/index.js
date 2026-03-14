@@ -8,6 +8,7 @@ dotenv.config();//its used to read .env file and set environment variables
 import userRoutes from "./routes/userRoutes.js";
 
 let app=express();//stores express app
+app.set("trust proxy", 1);
 let port=process.env.PORT || 6000
 
 //on get request
