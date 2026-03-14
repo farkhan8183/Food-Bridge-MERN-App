@@ -3,7 +3,7 @@ import { createContext } from 'react'
 export const authDataContext= createContext()   //it will create a context
 
 function AuthContext({children}) {
-let serverUrl = "http://localhost:8001" //value defination
+let serverUrl = "https://food-bridge-mern-app.onrender.com" //value defination
 
     let value = {
        serverUrl    //value we ll let other components use 
