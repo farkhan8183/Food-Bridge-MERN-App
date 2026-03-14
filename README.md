@@ -1,10 +1,10 @@
- #Food Bridge - MERN Stack Surplus Food Distribution Platform
+ # Food Bridge - MERN Stack Surplus Food Distribution Platform
 Food Bridge is a full-stack web application designed to combat food insecurity and waste in Pakistan. It provides a seamless interface for restaurants and households to donate surplus food to NGOs and individuals in need.
 
 ## 🔗 [Live Demo: Food Bridge App](https://food-bridge-mern-app-1.onrender.com/)
 
 
-##The Mission:
+## The Mission:
 In Pakistan, millions of tons of food are wasted annually while a significant portion of the population faces food insecurity. This project bridges that gap using modern web technology to create a localized, efficient donation ecosystem.
 
 ## Tech Stack & Architecture
@@ -18,7 +18,7 @@ Authentication: JWT (JSON Web Tokens) with Secure Cookie storage
 
 Deployment: Render (Backend/Frontend), MongoDB Atlas (Cloud Database)
 
-##Key Features:
+## Key Features:
 Secure User Roles: Distinct dashboards for Donors (Restaurants/Individuals),Volunteers and Recipients (NGOs/Volunteers).
 
 Real-time Listings: Donors can post food items with expiry times, quantity, and pickup locations.
@@ -31,7 +31,7 @@ Request Management: Track the status of food claims from "Pending" to "Picked Up
 
 Responsive UI: Fully optimized for mobile and desktop, ensuring accessibility for all users.
 
-##The Real Challenge? 
+## The Real Challenge? 
 > Managing three different user roles (Donor, Volunteer, Recipient) in one seamless ecosystem. I tackled this by implementing JWT-based Role-Based Access Control (RBAC), ensuring that user sessions are handled securely and redirected to the correct dashboard via custom React middleware.
 
 ## Installation & Local Setup
@@ -43,9 +43,9 @@ git clone https://github.com/your-username/food-bridge.git
 
 Install dependencies:
 
-# For Backend
+## For Backend
 npm install
-# For Frontend
+## For Frontend
 cd client && npm install
 
 Environment Variables:
