@@ -18,7 +18,7 @@ export const registration = async (req,res) => {
     if(!validator.isEmail(email)){  //validates email; requires its packages!
          return res.status(400).json({message:"Enter valid Email"})
     }
-    if(password.length < 8){
+    if(password.length < 3){
         return res.status(400).json({message:"Enter Strong Password"})
     }
     let hashPassword = await bcrypt.hash(password,10) //use bcrypt to hash password for security
@@ -98,7 +98,7 @@ export const volunteerRegistration = async (req,res) => {
     if(!validator.isEmail(email)){  //validates email; requires its packages!
          return res.status(400).json({message:"Enter valid Email"})
     }
-    if(password.length < 8){
+    if(password.length < 3){
         return res.status(400).json({message:"Enter Strong Password"})
     }
     let hashPassword = await bcrypt.hash(password,10) //use bcrypt to hash password for security
@@ -180,7 +180,7 @@ export const recipientRegistration = async (req,res) => {
     if(!validator.isEmail(email)){  //validates email; requires its packages!
          return res.status(400).json({message:"Enter valid Email"})
     }
-    if(password.length < 8){
+    if(password.length < 3){
         return res.status(400).json({message:"Enter Strong Password"})
     }
     let hashPassword = await bcrypt.hash(password,10) //use bcrypt to hash password for security
