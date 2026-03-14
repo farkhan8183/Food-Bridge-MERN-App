@@ -14,7 +14,7 @@ import { useContext } from 'react';
 import Loading from '../../components/Loading';
 import { toast } from 'react-toastify';
 import Recipietnregistration from './RecipientRegistration';
-import RecipientPanel from './recipientpanel';
+import RecipientPanel from './RecipientPanel';
 
 function Login() {
     let [show,setShow] = useState(false)
