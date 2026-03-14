@@ -20,9 +20,7 @@ app.use(express.json()) //will just convert incoming data into json
 app.use(cookieParser()) //a cookie parser
 //cors required for security!
 app.use(cors({
- origin: function(origin, callback){
-     callback(null, true);
- },
+ origin:["https://food-bridge-mern-app-1.onrender.com" , "http://localhost:5174"],
  credentials:true
 }))
 app.use("/api/auth",authRoutes) //if route is /api/auth,direct to authRoutes!
